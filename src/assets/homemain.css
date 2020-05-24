@@ -1,5 +1,5 @@
 .main{
-    max-width: 1226px;
+    max-width: 1225px;
     margin: 100px auto;
     position: relative;
 }
@@ -33,12 +33,11 @@
     overflow: hidden;
 }
 .main .picturewindows .picture>img{
-    width: 1226px;
+    width: 1225px;
     height: 460px;
 }
 .main .picturewindows .picture{
     display: flex;
-    transition: all 1.5s;
 }
 .main .allbuttons>button{
     border: none;

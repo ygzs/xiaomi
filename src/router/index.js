@@ -4,6 +4,7 @@ import SiteTopNavBar from "../components/SiteTopNavBar.vue";
 import SecondNav from "../components/SecondNav.vue";
 import Homemain from "../components/Homemain.vue";
 
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -24,7 +25,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
-  }
+  },
 ];
 
 const router = new VueRouter({
