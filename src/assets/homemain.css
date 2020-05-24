@@ -1,0 +1,65 @@
+.main{
+    max-width: 1226px;
+    margin: 100px auto;
+    position: relative;
+}
+.main .group{
+    height: 100%;
+    width: 235px;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    background: rgba(105,101,101,.6);
+    display: flex;
+}
+.main .group ol{
+    width: 100%;
+    margin: 20px 0px;
+}
+.main .group ol>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14.5px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(242, 242, 242,.1);
+}
+.main .group ol>li:hover{
+    background-color: rgb(255,103,0);
+}
+.main .picturewindows{
+    overflow: hidden;
+}
+.main .picturewindows .picture>img{
+    width: 1226px;
+    height: 460px;
+}
+.main .picturewindows .picture{
+    display: flex;
+    transition: all 1.5s;
+}
+.main .allbuttons>button{
+    border: none;
+    outline: none;
+    background:rgba(0,0,0,0)
+}
+.main .allbuttons>button:hover{
+    background: rgba(0,0,0,.6);
+}
+.main .allbuttons svg{
+    width: 40px;
+    height: 70px;
+    cursor:pointer;
+}
+.main .allbuttons .previous{
+    position: absolute;
+    top: 195px;
+    left: 235px;
+}
+.main .allbuttons .next{
+    position: absolute;
+    top: 195px;
+    right: 0px;
+}

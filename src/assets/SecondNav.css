@@ -1,0 +1,40 @@
+.SecondNav{
+  margin: 20px 30px;
+  }
+.logo{
+  display: inline-block;
+  font-size: 0px;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+.logo>img,
+.logo a>img{
+  width: 55px;
+  height: 55px;
+  background:rgb(255,103,0);
+  transition: all 0.3s;
+}
+.logo a{
+  position: absolute;
+  left: -100%;
+  top: 0px;
+  transition: all 0.3s;
+}
+.logo:hover{
+  cursor: pointer;
+}
+.product{
+  float: left;
+  margin-left: 180px;
+}
+.product ol>li{
+  float: left;
+  padding: 17px 10px;
+  font-size: 16px;
+}
+.product ol>li:hover{
+  color: rgb(255,103,0);
+  cursor:pointer;
+}
