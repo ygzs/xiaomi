@@ -14,15 +14,8 @@
     </div>
     <div class="product">
       <ol class="clearfix">
-        <li>小米手机</li>
-        <li>Redmi红米</li>
-        <li>电视</li>
-        <li>笔记本</li>
-        <li>家电</li>
-        <li>路由器</li>
-        <li>智能硬件</li>
-        <li>服务</li>
-        <li>社区</li>
+        <li v-for="(item,index) in products" :key="index"
+        @click="jumpTo(item)">{{item}}</li>
       </ol>
     </div>
   </div>
@@ -31,6 +24,14 @@
 <script>
 import "../assets/SecondNav.css";
 export default {
+  data(){
+    return {
+      products:[
+      '小米手机','Redmi红米','电视','笔记本',
+      '家电','路由器','智能硬件','服务','社区'
+    ]
+    }
+  },
   methods: {
     mouseover() {
       this.$refs.logo.children[0].style.transform = `translateX(55px)`;
@@ -39,7 +40,10 @@ export default {
     mouseleave() {
       this.$refs.logo.children[0].style.transform = `translateX(0px)`;
       this.$refs.logo.children[1].style.transform = `translateX(0px)`;
-    }
+    },
+    jumpTo(name){
+      this.$router.push({ name: 'About', params: { id: name }})
+    },
   }
 };
 </script>

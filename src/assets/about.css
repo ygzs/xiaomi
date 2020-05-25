@@ -1,0 +1,18 @@
+.about{
+    margin: 100px;
+    text-align: center;
+}
+button{
+    border: 1px solid rgb(255,103,0);
+    outline: none;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+    height: 120px;
+    width: 200px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(255,103,0);
+}

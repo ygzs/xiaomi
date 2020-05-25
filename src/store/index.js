@@ -7,7 +7,11 @@ export default new Vuex.Store({
   state: {
     cart: 0
   },
-  mutations: {},
+  mutations: {
+    addcart(state){
+      this.state.cart++
+    }
+  },
   actions: {},
   modules: {}
 });

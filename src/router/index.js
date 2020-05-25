@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import SiteTopNavBar from "../components/SiteTopNavBar.vue";
 import SecondNav from "../components/SecondNav.vue";
 import Homemain from "../components/Homemain.vue";
+import mainproduct from "../components/Mainproduct.vue"
+import about from "../views/About.vue"
 
 
 Vue.use(VueRouter);
@@ -14,17 +16,21 @@ const routes = [
     components: {
       bar1: SiteTopNavBar,
       bar2: SecondNav,
-      main: Homemain
+      main: Homemain,
+      mainproduct: mainproduct,
     }
   },
   {
     path: "/about",
     name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    //component: () =>
+    //  import( /* webpackChunkName: "about" */ "../views/About.vue"),
+    components:{
+      bar1: SiteTopNavBar,
+      bar2: SecondNav,
+      about: about
+    },
+    params:{id:name}
   },
 ];
 

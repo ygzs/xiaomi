@@ -1,6 +1,6 @@
 .main{
     max-width: 1225px;
-    margin: 100px auto;
+    margin: 100px auto 25px auto;
     position: relative;
 }
 .main .group{

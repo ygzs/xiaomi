@@ -1,0 +1,32 @@
+.show{
+    margin-bottom: 500px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 28px;
+}
+.show > .first>ul{
+    max-width: 234px;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    background-color: rgb(95,87,80);
+    border: 3px solid rgb(95,87,80);
+    color: rgba(255, 255, 255, .7);
+    font-size: 12px;
+}
+.show > .first>ul>li{
+    width: calc(33.3333333% - 2px);
+    border: 1px soli rgba(95,87,80,0.8);
+    padding: 20px 0px;
+}
+.show > .first>ul>li>a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first a>img{
+    width: 24px;
+    height: 24px;
+}
